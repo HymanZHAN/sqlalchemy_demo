@@ -9,6 +9,8 @@ def test_unbookmark_a_blog(session):
     author = create_random_user(session)
     blog = create_random_blog(session, is_published=True, author_id=author.id)
     bookmarker = create_random_user(session)
+
+    # remove "bookmark = " below to make the test fail
     bookmark = crud.toggle_bookmark(session, blog_id=blog.id, bookmarker_id=bookmarker.id)
 
     assert len(blog.bookmarks) == 1
