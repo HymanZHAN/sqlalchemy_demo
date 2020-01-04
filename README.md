@@ -23,7 +23,7 @@ Run the test:
 pytest
 ```
 
-The test is lcoated at `tests/test_blog.py`. To make the test fail, remove the `bookmakr = ` assignment at the first `crud.toggle_bookmark` call.
+The test is lcoated at `tests/test_blog.py`. To make the test fail, remove the `bookmark = ` assignment at the first `crud.toggle_bookmark` call.
 
 ```bash
 > pytest
